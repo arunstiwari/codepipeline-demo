@@ -16,6 +16,6 @@ public class OrderDaoTest {
     @Test
     public void getOrders() {
         List<Order> orders = orderDao.getOrders();
-        Assertions.assertEquals(4,orders.size());
+        Assertions.assertEquals(5,orders.size());
     }
 }
