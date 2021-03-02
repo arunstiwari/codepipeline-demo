@@ -16,3 +16,5 @@ artifacts:
     - target/order-service.jar
   discard-paths: yes
 reports:
+  files:
+    - target/surefire-reports/**/*
