@@ -4,6 +4,9 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
+      - echo Running Unit Test
+      - mvn clean test
+      - echo Creating package
       - mvn clean package
   post_build:
     commands:
@@ -12,3 +15,4 @@ artifacts:
   files:
     - target/order-service.jar
   discard-paths: yes
+reports:
